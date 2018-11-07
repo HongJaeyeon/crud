@@ -1,0 +1,12 @@
+<a href="/board/new">게시판 생성</a>
+
+<h1>제목/편집자/내용</h1> 
+<% @list.each do |g| %>
+    <a href="/board/show/<%=g.id%>"> <%=g.title %> </a>
+    <br>
+    
+    <br>
+    <%=g.editor%>
+    
+    <hr>
+<% end %>

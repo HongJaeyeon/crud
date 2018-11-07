@@ -1,0 +1,10 @@
+<div class="container">
+    
+    id : <%= @post.id %> <br>
+    제목 : <%= @post.title%><br>
+    작성자 : <%= @post.editor%><br>
+    내용 : <%= @post.content%><br>
+    <a href="/board/edit/<%= @post.id %>">[수정]</a>
+    <br>
+    <a href="/board/destroy/<%= @post.id %>">[삭제]</a>
+</div>
